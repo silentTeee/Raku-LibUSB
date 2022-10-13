@@ -2,7 +2,7 @@ use NativeCall;
 
 unit module LibUSB::Raw;
 
-constant \LIB = 'usb-1.0';
+constant \LIB = 'libusb-1.0.so.0';
 
 subset Read-Request of Int is export where { $_ +& 0b1000000 };
 
